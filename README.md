@@ -23,5 +23,4 @@ Para inicializar o banco de dados:
         database:'testdb'	
 
 ## No navegador
-Pesquise por: localhost:8081
-<!-- Pesquise por: localhost:8080/api/alunos -->
+Pesquise por: localhost:8080/api/alunos
