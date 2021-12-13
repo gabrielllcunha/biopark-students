@@ -7,6 +7,9 @@ module.exports = app => {
   
     // Buscar um aluno com o id
     router.get("/:id", alunos.findOne);
+
+    // Buscar todos os alunos
+    router.get("/", alunos.findAll);
   
     app.use('/api/alunos', router);
   };

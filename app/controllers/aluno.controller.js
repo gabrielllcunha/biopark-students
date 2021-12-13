@@ -1,5 +1,6 @@
 const db = require("../models");
 const Aluno = db.alunos;
+const Op = db.Sequelize.Op;
 
 
 // Criar um novo aluno
@@ -51,4 +52,21 @@ exports.findOne = (req, res) => {
           message: "Erro ao recuperar o aluno com o id=" + id
         });
       });
+};
+
+// Listar todos os alunos
+exports.findAll = (req, res) => {
+  const nome = req.query.nome;
+  var condition = nome ? { nome: { [Op.like]: `%${nome}%` } } : null;
+
+  Aluno.findAll({ where: condition })
+    .then(data => {
+      res.send(data);
+    })
+    .catch(err => {
+      res.status(500).send({
+        message:
+          err.message || "Erro ao listar os alunos."
+      });
+    });
 };

@@ -11,8 +11,7 @@
             "name": "MySQL",
             "database": "testdb",
             "username": "root",
-            "password": "123456",
-            // "connectionTimeout": 60
+            "password": "123456"
         }
     ]
 }
