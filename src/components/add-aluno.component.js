@@ -109,7 +109,7 @@ export default class AddAluno extends Component {
                 />
               </div>
   
-              <button onClick={this.saveTutorial} className="btn btn-success">
+              <button onClick={this.saveAluno} className="btn btn-success">
                 Enviar
               </button>
             </div>

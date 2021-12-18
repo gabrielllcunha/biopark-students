@@ -3,7 +3,7 @@ module.exports = app => {
     var router = require("express").Router();
   
     // Criar um novo aluno
-    router.post("/", alunos.create);
+    router.post("/add", alunos.create);
   
     // Buscar um aluno com o id
     router.get("/:id", alunos.findOne);
