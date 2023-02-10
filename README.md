@@ -1,15 +1,17 @@
 # Desafio Tech - Biopark
 
 ## Instalação
+
 Para instalar as dependências do projeto:
 
 `npm install`
 
 Para inicializar o projeto:
 
-`npm start` 
+`npm start`
 
 ## Configuração
+
 Para inicializar o servidor:
 
 `node server.js`
@@ -23,4 +25,5 @@ Para inicializar o servidor:
         database:'testdb'	 -->
 
 ## No navegador
-Pesquise por: localhost:8080/api/alunos
+
+Pesquise por: localhost:8080/api/students

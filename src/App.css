@@ -7,8 +7,17 @@
   pointer-events: none;
 }
 
+.main-background {
+  background-color: #FBFBFB;
+  height: 100vh;
+}
+
+.biopark-header {
+  background-color: #253746 !important;
+}
+
 .nav-link {
-  color: #61dafb;
+  color: white;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -18,7 +27,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #253746;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -29,7 +38,7 @@
 }
 
 .App-link {
-  color: #61dafb;
+  color: white;
 }
 
 @keyframes App-logo-spin {
@@ -41,7 +50,7 @@
   }
 }
 
-.list {
+/* .list {
   text-align: left;
   max-width: 750px;
   margin: auto;
@@ -55,4 +64,4 @@
 .edit-form {
   max-width: 300px;
   margin: auto;
-}
+} */
